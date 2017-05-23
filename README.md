@@ -13,40 +13,45 @@ It runs locally in a prompt and should work with Windows and Linux.
 
 ### An example conversation
 
-Monroe: I'm here!
-You: How are you?
-Monroe: I'm good thank you
-You: Good to hear
-Monroe: How about you?
-You: I'm fine, thanks for asking
-Monroe: oh you'd like to ask me a question
-You: You bet I do
-Monroe: bye bye bye
-You: How about that question?
-Monroe: Go ahead and ask.
-You: How much is the fish?
-Monroe: What is it that you want to know?
-You: Are you alive?
-Monroe: Yes I am.
-You: Monroe please get me the exchange rate of USD
-Monroe: The exchange rate of USD against EUR is 1.1179 (source: European Central Bank, 2017-05-19)
-You: Thanks!
-Monroe: that's a very funny joke
-You: Monroe
-Monroe: How can I help you?
-You: Go to sleep
-Monroe: Good bye!
-You: Are you there?
-You: Hello?
-You: Wake up
-You: Monroe wake up
-Monroe: Good morning!
-You: Morning
-Monroe: Or something
-You: Bye
-Monroe: Tell me
-You:
-No input. Bye!
+>Monroe: I'm here!
+>You: How are you?
+>Monroe: I'm good thank you
+>You: Good to hear
+>Monroe: How about you?
+>You: I'm fine, thanks for asking
+>Monroe: oh you'd like to ask me a question
+>You: You bet I do
+>Monroe: bye bye bye
+>You: How about that question?
+>Monroe: Go ahead and ask.
+>You: How much is the fish?
+>Monroe: What is it that you want to know?
+>You: Are you alive?
+>Monroe: Yes I am.
+
+This demonstrates the currency rate skill:
+
+>You: Monroe please get me the exchange rate of USD
+>Monroe: The exchange rate of USD against EUR is 1.1179 (source: European Central Bank, 2017-05-19)
+
+This demonstrates the sleep mode skill:
+
+>You: Monroe
+>Monroe: How can I help you?
+>You: Go to sleep
+>Monroe: Good bye!
+>You: Are you there?
+>You: Hello?
+>You: Wake up
+>You: Monroe wake up
+>Monroe: Good morning!
+>You: Morning
+
+You end the execution with an empty line
+
+>Monroe: Or something
+>You:
+>No input. Bye!
 
 
 ## Installation
