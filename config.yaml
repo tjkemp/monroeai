@@ -1,0 +1,7 @@
+ainame: Monroe
+lang: en
+interface: voice
+chatterbot: english
+skillset: monroe_skills
+languages:
+    - en

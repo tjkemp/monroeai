@@ -1,0 +1,13 @@
+go_to_sleep:
+    - "Bye bye!"
+    - "Go to sleep"
+    - "Good night"
+    - "Sleep well"
+    - "Bye"
+    - "Good bye!"
+    - "Go to sleep mode"
+wake_up:
+    - "Are you there"
+    - "Can you hear me"
+    - "Is this working"
+    - "Wake up"

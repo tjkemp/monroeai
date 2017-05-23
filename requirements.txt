@@ -1,0 +1,8 @@
+chatterbot
+sklearn
+numpy
+scipy
+speechrecognition
+google_speech
+pyaml
+pyaudio
