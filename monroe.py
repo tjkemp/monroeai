@@ -2,7 +2,7 @@ import sys
 import yaml
 import importlib
 import pickle
-from FrontLobe import brain, speech_google
+from FrontLobe import brain
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
 
@@ -34,33 +34,6 @@ class Monroe(object):
 			classifier = pickle.load(f)
 		
 		self.AI = brain.Brain(self.ainame, self.lang, skillmodule, classifier, vectorizer)
-		return
-
-	def voice(self):
-		""" Main loop if AI is run with voice interface. """
-
-		listen = speech_google.listen
-		speak = speech_google.speak
-
-		text = self.AI.say_hello()
-
-		self._speak(text, self.ainame)
-		speak(text, self.lang)
-
-		try:
-			while True:
-				text = listen(self.lang)
-				if text is None or len(text) == 0:
-					print("No input. Bye!")
-					return
-				self._speak(text, "You")
-				answer = self.AI.think(text)
-
-				self._speak(answer, self.ainame)
-				speak(answer, self.lang)
-		
-		except KeyboardInterrupt:
-			pass
 		return
 
 	def cli(self):
@@ -107,9 +80,6 @@ def main():
 	# initialize skills
 	m.init_skills(skillset)
 	print(iface)
-	if iface == "voice":
-		m.voice()
-	else:
-		m.cli()
+	m.cli()
 
 if __name__ == '__main__': main()

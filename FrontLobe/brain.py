@@ -15,16 +15,13 @@ class Brain(object):
 			'awake': True,
 			'expecting_skill': False  }
 
-		self.chatterbot = ChatBot(
-			self.ainame, trainer='chatterbot.trainers.ChatterBotCorpusTrainer')
-
 	def say_hello(self):
 		answer, params = getattr(self.skillmodule, "greeting")()
 		return answer
 
 	def think(self, speech_text):
-		""" The method returns an answer either by firing a skill function or getting an
-		chatterbot answer. Also it controls the awake/sleep status of the AI. """
+		""" The method returns an answer by firing a skill function.
+		Also it controls the awake/sleep status of the AI. """
 
 		text = speech_text
 		# if the name of the AI is found in text then we awaken sleeping AI and evoke a skill
