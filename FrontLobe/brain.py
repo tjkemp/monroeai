@@ -1,4 +1,3 @@
-from chatterbot import ChatBot
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
 import numpy as np
@@ -69,7 +68,6 @@ class Brain(object):
 	def _chat_answer(self, text):
 		""" This function gives random chatter answer to input. """
 
-		res = self.chatterbot.get_response(text)
-		#to train it: self.chatterbot.train("chatterbot.corpus.english")
+		response = "Sorry, I don't understand"
 
-		return res.text
+		return response
