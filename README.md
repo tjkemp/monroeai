@@ -1,15 +1,18 @@
-# MonroeAI 0.1
+# MonroeAI 0.2
 
-MonroeAI is cloud-enabled digital assistant. This is still very much work in progress, but it works. It turns speech into text, then decides with a machine learning model whether a skill (eg. query some API for info etc) should be run or whether to fallback to a chatbot and generate some small talk.
+MonroeAI is skill based machine learning fueled text understanding library for chatbots somewhat like Amazon Alexa is. It can understand meaning from text (once trained), ask follow up questions and then execute code depending on that (e.g. query an API).
 
-It runs locally in a prompt and should work with Windows and Linux.
+The understanding part of the library is done by giving text examples and then training a model. New
+capabilities / skills can be added as plugins.
+
+Note that this is still very much work in progress. 
 
 ### Features
 
-  - Speach-To-Text and Text-To-Speach
+Speech to text and random chatter capabilities removed as of 0.2 to renew the focus on plugin architecture.
+
   - Can add new skills as plugins
   - Uses machine learning to decide what the user wanted
-  - Falls back to chatter if no meaning was found
 
 ### An example conversation
 
