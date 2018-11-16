@@ -22,15 +22,6 @@ Speech to text and random chatter capabilities removed as of 0.2 to renew the fo
     You: Good to hear
     Monroe: How about you?
     You: I'm fine, thanks for asking
-    Monroe: oh you'd like to ask me a question
-    You: You bet I do
-    Monroe: bye bye bye
-    You: How about that question?
-    Monroe: Go ahead and ask.
-    You: How much is the fish?
-    Monroe: What is it that you want to know?
-    You: Are you alive?
-    Monroe: Yes I am.
 
 This demonstrates the currency rate skill:
 
